@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.activities.SearchActivity">
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/view"
+        android:background="@color/colorAccent"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/iv_back"
+        android:layout_marginStart="@dimen/_10sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:onClick="onClick"
+        app:layout_constraintBottom_toBottomOf="@id/view"
+        android:src="@drawable/group_2679"/>
+
+    <EditText
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:background="@drawable/search_corners"
+        android:drawableEnd="@drawable/ic_search"
+        android:gravity="center_vertical"
+        android:paddingStart="@dimen/_20sdp"
+        android:paddingTop="@dimen/_10sdp"
+        android:paddingEnd="@dimen/_20sdp"
+        android:paddingBottom="@dimen/_10sdp"
+        android:hint="@string/search"
+        android:alpha="0.16"
+        android:id="@+id/search_bar"
+        android:imeOptions="actionDone"
+        android:maxLines="1"
+        android:textCursorDrawable="@null"
+        android:textColorHint="@color/colorWhite"
+        android:textColor="@color/colorWhite"
+        app:layout_constraintBottom_toBottomOf="@id/view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/iv_back"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/view"
+        android:overScrollMode="never"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:id="@+id/recycler_view"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

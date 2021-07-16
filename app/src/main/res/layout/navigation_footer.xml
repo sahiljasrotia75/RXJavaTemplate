@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorWhite"
+    android:orientation="horizontal"
+    android:paddingVertical="@dimen/_10sdp"
+    android:weightSum="5">
+
+    <TextView
+        android:id="@+id/tv_home"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:drawableTop="@drawable/ic_home_selected"
+        android:fontFamily="@font/sf_prodisplay_regular"
+        android:gravity="bottom"
+        android:onClick="onClick"
+        android:text="@string/home"
+        android:textAlignment="center"
+        android:textColor="@color/_ff8a74"
+        android:textSize="10sp"
+        tools:ignore="RtlCompat" />
+
+    <TextView
+        android:id="@+id/tv_trending"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:drawableTop="@drawable/ic_trending_selected"
+        android:fontFamily="@font/sf_prodisplay_regular"
+        android:gravity="bottom"
+        android:onClick="onClick"
+        android:text="@string/trending"
+        android:textAlignment="center"
+        android:textColor="@color/_ff8a74"
+        android:textSize="10sp"
+        tools:ignore="RtlCompat" />
+
+    <TextView
+        android:id="@+id/tv_booking"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:drawableTop="@drawable/ic_bookng_selected"
+        android:fontFamily="@font/sf_prodisplay_regular"
+        android:gravity="bottom"
+        android:onClick="onClick"
+        android:text="@string/my_booking"
+        android:textAlignment="center"
+        android:textColor="@color/_ff8a74"
+        android:textSize="10sp"
+        tools:ignore="RtlCompat" />
+
+    <TextView
+        android:id="@+id/tv_chat"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:drawableTop="@drawable/ic_chat_selected"
+        android:fontFamily="@font/sf_prodisplay_regular"
+        android:gravity="bottom"
+        android:onClick="onClick"
+        android:text="@string/chat"
+        android:textAlignment="center"
+        android:textColor="@color/_ff8a74"
+        android:textSize="10sp"
+        tools:ignore="RtlCompat" />
+
+    <TextView
+        android:id="@+id/tv_account"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:drawableTop="@drawable/ic_account_selected"
+        android:fontFamily="@font/sf_prodisplay_regular"
+        android:gravity="bottom"
+        android:onClick="onClick"
+        android:text="@string/account"
+        android:textAlignment="center"
+        android:textColor="@color/_ff8a74"
+        android:textSize="10sp"
+        tools:ignore="RtlCompat" />
+
+
+</LinearLayout>

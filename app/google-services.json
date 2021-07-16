@@ -1,0 +1,186 @@
+{
+  "project_info": {
+    "project_number": "244408441263",
+    "firebase_url": "https://genie-cd4d8.firebaseio.com",
+    "project_id": "genie-cd4d8",
+    "storage_bucket": "genie-cd4d8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:244408441263:android:46407d9b93fc4804bf775a",
+        "android_client_info": {
+          "package_name": "com.genie"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "244408441263-4jf32af6cd05k788harfttosgolaskjj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.genie",
+            "certificate_hash": "22427ed5e79dbc2a8f3ff0e9b8a3c6bd0e5be18d"
+          }
+        },
+        {
+          "client_id": "244408441263-dtusts1ephlpd2vkmm5tou92u0lqqd58.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.genie",
+            "certificate_hash": "7e75790fbf3697f64a712d1ba269491a57ad4bf0"
+          }
+        },
+        {
+          "client_id": "244408441263-hkfl9be23382bsgoo1fkcli6s21to1ni.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.genie",
+            "certificate_hash": "709b8684db605a307995b83e5e153cc1ac263f90"
+          }
+        },
+        {
+          "client_id": "244408441263-mcnbeej6omn78gr8uh210effus7kv53a.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.genie",
+            "certificate_hash": "936f5bd899b108a03f37b946c1a82b8c862dd4e8"
+          }
+        },
+        {
+          "client_id": "244408441263-qlghbuvjtd0oisfh4r9vi74hqbekrvil.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.genie",
+            "certificate_hash": "78d38104bf8b857331532da9a9ff0ebdce39d05c"
+          }
+        },
+        {
+          "client_id": "244408441263-glihl84iehbv44fp2nf9rvgidmibj8qr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAy9ovfYN3bDIlwwwlwavbCwDf4FHyWrsQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "244408441263-glihl84iehbv44fp2nf9rvgidmibj8qr.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "244408441263-1alk9j8ffqffokn6g8i78a3agkkm4lh8.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.GenieCustomerApp",
+                "app_store_id": "1532001914"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:244408441263:android:8b92bb4adb75e26ebf775a",
+        "android_client_info": {
+          "package_name": "com.geniecustomer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "244408441263-glihl84iehbv44fp2nf9rvgidmibj8qr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAy9ovfYN3bDIlwwwlwavbCwDf4FHyWrsQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "244408441263-glihl84iehbv44fp2nf9rvgidmibj8qr.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "244408441263-1alk9j8ffqffokn6g8i78a3agkkm4lh8.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.GenieCustomerApp",
+                "app_store_id": "1532001914"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:244408441263:android:d3681b560b016012bf775a",
+        "android_client_info": {
+          "package_name": "genie.service.provider"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "244408441263-cqbkg7s44j4fg3aqkp43j8tkg2d7c5k6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "genie.service.provider",
+            "certificate_hash": "7e75790fbf3697f64a712d1ba269491a57ad4bf0"
+          }
+        },
+        {
+          "client_id": "244408441263-ohvgmg82ube5jknmuma2e5gm7lme4adu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "genie.service.provider",
+            "certificate_hash": "aaf09cd09915ef61032ec86960fd22cdcca5cf41"
+          }
+        },
+        {
+          "client_id": "244408441263-pbss0r76obc7atn73gj75p3qb092bidg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "genie.service.provider",
+            "certificate_hash": "936f5bd899b108a03f37b946c1a82b8c862dd4e8"
+          }
+        },
+        {
+          "client_id": "244408441263-glihl84iehbv44fp2nf9rvgidmibj8qr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAy9ovfYN3bDIlwwwlwavbCwDf4FHyWrsQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "244408441263-glihl84iehbv44fp2nf9rvgidmibj8qr.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "244408441263-1alk9j8ffqffokn6g8i78a3agkkm4lh8.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.GenieCustomerApp",
+                "app_store_id": "1532001914"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

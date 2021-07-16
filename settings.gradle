@@ -1,0 +1,2 @@
+rootProject.name='Genie'
+include ':app', ':oppwa.mobile-2.31.0'

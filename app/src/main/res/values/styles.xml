@@ -1,0 +1,84 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="mukeshOtpStyle">@style/OtpWidget.OtpView</item>
+    </style>
+
+    <style name="OtpWidget.OtpView" parent="Widget.AppCompat.EditText">
+        <item name="android:background">@null</item>
+        <item name="android:minHeight">0dp</item>
+        <item name="android:maxLines">1</item>
+    </style>
+
+    <style name="MyCustomTextAppearance" parent="TextAppearance.Design.Tab">
+        <item name="textAllCaps">false</item>
+        <item name="android:textSize">@dimen/_13sdp</item>
+        <item name="android:fontFamily">@font/sf_prodisplay_regular</item>
+    </style>
+
+    <style name="my_rating_bar" parent="Widget.AppCompat.RatingBar">
+        <item name="android:progressDrawable">@drawable/food_rating_bar_full</item>
+    </style>
+
+    <style name="tab_text" parent="@android:style/TextAppearance.Widget.TabWidget">
+        <item name="android:fontFamily">@font/sf_prodisplay_bold</item>
+        <item name="android:textSize">22sp</item>
+    </style>
+
+    <style name="tab_text1" parent="@android:style/TextAppearance.Widget.TabWidget">
+        <item name="android:fontFamily">@font/sf_prodisplay_bold</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+
+    <style name="RatingBarGreen" parent="Widget.AppCompat.RatingBar.Small">
+        <item name="colorControlNormal">#000000</item>
+        <item name="colorControlActivated">#ffaa00</item>
+    </style>
+    <style name="MyRatingBar" parent="Theme.AppCompat">
+        <item name="colorControlNormal">#000000</item>
+        <item name="colorControlActivated">@color/_fcb84e</item>
+    </style>
+
+    <style name="TransparentDialog" parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="android:windowCloseOnTouchOutside">false</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:colorBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:state_expanded">true</item>
+        <item name="android:backgroundDimAmount">0.3</item>
+        <!--<item name="android:windowFrame">@null</item>-->
+        <item name="android:windowIsFloating">true</item>
+    </style>
+
+    <style name="TransparentDialog1" parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="android:windowCloseOnTouchOutside">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:colorBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:state_expanded">true</item>
+        <item name="android:backgroundDimAmount">0.3</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+    </style>
+
+    <style name="SheetDialog" parent="Theme.Design.Light.BottomSheetDialog">
+        <!--<item name="android:windowCloseOnTouchOutside">false</item>-->
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:colorBackground">@android:color/transparent</item>
+        <item name="android:statusBarColor" tools:ignore="NewApi">@android:color/transparent</item>
+        <item name="android:navigationBarColor" tools:targetApi="lollipop">@android:color/white</item>
+    </style>
+
+
+
+</resources>

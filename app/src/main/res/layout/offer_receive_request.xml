@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+<androidx.cardview.widget.CardView
+    app:layout_constraintTop_toTopOf="parent"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/_3sdp"
+    android:layout_marginBottom="@dimen/_3sdp"
+    android:layout_marginStart="@dimen/_10sdp"
+    android:layout_marginEnd="@dimen/_10sdp"
+    app:cardCornerRadius="@dimen/_10sdp"
+    app:cardBackgroundColor="@color/_140f52">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:cardBackgroundColor="@color/colorAccent"
+        app:cardCornerRadius="@dimen/_10sdp"
+        app:cardElevation="5dp"
+        android:elevation="5dp"
+        android:id="@+id/top_cv">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_10sdp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Offer Received"
+                android:textSize="18sp"
+                android:id="@+id/tv_Sent"
+                android:paddingStart="@dimen/_10sdp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:textColor="@color/colorWhite"
+                android:fontFamily="@font/sf_pro_semibold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$300"
+                android:textSize="38sp"
+                android:paddingStart="@dimen/_10sdp"
+                android:id="@+id/tv_amount"
+                app:layout_constraintTop_toBottomOf="@id/tv_Sent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:textColor="@color/colorWhite"
+                android:fontFamily="@font/sf_pro_semibold"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.cardview.widget.CardView>
+    <TextView
+        android:visibility="visible"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/decline"
+        android:textSize="23sp"
+        app:layout_constraintWidth_percent=".5"
+        android:id="@+id/tv_decline"
+        android:textAlignment="center"
+        app:layout_constraintTop_toBottomOf="@id/top_cv"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:textColor="@color/colorWhite"
+        android:paddingBottom="@dimen/_10sdp"
+        android:paddingTop="@dimen/_10sdp"
+        android:fontFamily="@font/sf_pro_semibold"/>
+    <TextView
+        android:visibility="visible"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/accept"
+        android:textSize="23sp"
+        android:id="@+id/tv_accept"
+        app:layout_constraintWidth_percent=".5"
+        android:textAlignment="center"
+        android:paddingBottom="@dimen/_10sdp"
+        android:paddingTop="@dimen/_10sdp"
+        app:layout_constraintTop_toBottomOf="@id/top_cv"
+        app:layout_constraintLeft_toRightOf="@id/tv_decline"
+        android:textColor="@color/colorWhite"
+        android:fontFamily="@font/sf_pro_semibold"/>
+
+
+    <TextView
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Accepted"
+        android:textSize="23sp"
+        android:id="@+id/tv_status"
+        android:textAlignment="center"
+        android:paddingBottom="@dimen/_10sdp"
+        android:paddingTop="@dimen/_10sdp"
+        app:layout_constraintTop_toBottomOf="@id/top_cv"
+        app:layout_constraintLeft_toRightOf="@id/tv_decline"
+        android:textColor="@color/colorWhite"
+        android:fontFamily="@font/sf_pro_semibold"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

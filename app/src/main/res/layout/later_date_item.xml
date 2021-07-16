@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="@dimen/_10sdp"
+    android:paddingStart="@dimen/_20sdp"
+    android:paddingEnd="@dimen/_20sdp"
+    android:paddingTop="@dimen/_10sdp"
+    android:paddingBottom="@dimen/_10sdp"
+    android:id="@+id/parent_item"
+    android:background="@drawable/home_grid_corners">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="1"
+        android:textSize="21sp"
+        android:fontFamily="@font/sf_prodisplay_regular"
+        android:textColor="@color/_7a828e"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/tv_date"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="Mon"
+        android:textSize="16sp"
+        android:fontFamily="@font/sf_prodisplay_regular"
+        android:textColor="@color/_7a828e"
+        app:layout_constraintTop_toBottomOf="@id/tv_date"
+        android:id="@+id/tv_month"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

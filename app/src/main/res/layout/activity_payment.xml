@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.activities.PaymentActivity">
+
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/group_2679"
+        android:paddingEnd="@dimen/_20sdp"
+        android:paddingVertical="@dimen/_10sdp"
+        android:textAlignment="center"
+        android:paddingStart="@dimen/_10sdp"
+        android:background="@color/colorAccent"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/_18sdp"
+        android:onClick="onClick"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvTotPayment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:fontFamily="@font/sf_prodisplay_bold"
+        android:text="@string/total_payment"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:textColor="@color/colorAccent"
+        android:textSize="@dimen/_21sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitle" />
+
+    <TextView
+        android:id="@+id/tvTotValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:fontFamily="@font/sf_prodisplay_bold"
+        android:text=""
+        android:layout_marginTop="@dimen/_10sdp"
+        android:textColor="@color/colorAccent"
+        android:textSize="@dimen/_21sdp"
+        app:layout_constraintEnd_toEndOf="@+id/tvTotPayment"
+        app:layout_constraintStart_toStartOf="@+id/tvTotPayment"
+        app:layout_constraintTop_toBottomOf="@+id/tvTotPayment" />
+
+
+    <LinearLayout
+        android:id="@+id/llVisaTick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/circle_bg_blue"
+        android:elevation="@dimen/_5sdp"
+        android:padding="@dimen/_5sdp"
+        android:layout_marginEnd="@dimen/_22sdp"
+        app:layout_constraintBottom_toTopOf="@+id/llVisa"
+        app:layout_constraintEnd_toStartOf="@+id/llMaster"
+        app:layout_constraintStart_toEndOf="@+id/llVisa"
+        app:layout_constraintTop_toTopOf="@+id/llVisa">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="@dimen/_10sdp"
+            android:layout_height="@dimen/_10sdp"
+            android:src="@drawable/icon_3" />
+
+    </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/llVisa"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:padding="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:background="@drawable/blue_rounded_stroke"
+            app:layout_constraintTop_toBottomOf="@+id/tvTotValue"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/llMaster">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:src="@drawable/visa_us_logo"
+            />
+        </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llMasterTick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/circle_bg_blue"
+        android:elevation="@dimen/_5sdp"
+        android:padding="@dimen/_5sdp"
+        android:visibility="gone"
+        android:layout_marginEnd="@dimen/_22sdp"
+        app:layout_constraintBottom_toTopOf="@+id/llMaster"
+        app:layout_constraintEnd_toStartOf="@+id/llPayPal"
+        app:layout_constraintStart_toEndOf="@+id/llMaster"
+        app:layout_constraintTop_toTopOf="@+id/llMaster">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="@dimen/_10sdp"
+            android:layout_height="@dimen/_10sdp"
+            android:src="@drawable/icon_3" />
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llMaster"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginHorizontal="@dimen/_5sdp"
+            android:background="@drawable/blue_rounded_stroke"
+            app:layout_constraintStart_toEndOf="@+id/llVisa"
+            app:layout_constraintTop_toBottomOf="@+id/tvTotValue"
+            app:layout_constraintEnd_toStartOf="@+id/llPayPal">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:src="@drawable/master_card_early_1990_s_logo"
+                />
+        </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llPaypalTick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/circle_bg_blue"
+        android:elevation="@dimen/_5sdp"
+        android:padding="@dimen/_5sdp"
+        android:visibility="gone"
+        android:layout_marginEnd="@dimen/_22sdp"
+        app:layout_constraintBottom_toTopOf="@+id/llPayPal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/llPayPal"
+        app:layout_constraintTop_toTopOf="@+id/llPayPal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="@dimen/_10sdp"
+            android:layout_height="@dimen/_10sdp"
+            android:src="@drawable/icon_3" />
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llPayPal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:background="@drawable/blue_rounded_stroke"
+            app:layout_constraintStart_toEndOf="@+id/llMaster"
+            app:layout_constraintTop_toBottomOf="@+id/tvTotValue"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:src="@drawable/paypal_png_13"
+                />
+        </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/tvCardHolderName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/sf_prodisplay_regular"
+        android:text="@string/card_holderName"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:textColor="@color/colorAccent"
+        android:textSize="@dimen/_12sdp"
+        app:layout_constraintEnd_toEndOf="@+id/llPayPal"
+        app:layout_constraintStart_toStartOf="@+id/llVisa"
+        app:layout_constraintTop_toBottomOf="@+id/llVisa" />
+
+    <EditText
+        android:id="@+id/edtName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_15sdp"
+        android:layout_marginBottom="@dimen/_30sdp"
+        android:background="@color/transparent"
+        android:fontFamily="@font/sf_prodisplay_bold"
+        android:hint="Enter Name"
+        android:inputType="text"
+        android:maxLines="1"
+        android:textColor="#0575E6"
+        android:textColorHint="#e5e5e5"
+        android:textSize="@dimen/_26sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvCardHolderName" />
+
+    <TextView
+        android:id="@+id/tvCardNo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/sf_prodisplay_regular"
+        android:text="@string/card_no"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:textColor="@color/colorAccent"
+        android:textSize="@dimen/_12sdp"
+        app:layout_constraintEnd_toEndOf="@+id/llPayPal"
+        app:layout_constraintStart_toStartOf="@+id/llVisa"
+        app:layout_constraintTop_toBottomOf="@+id/edtName" />
+
+    <EditText
+        android:id="@+id/edtCardno"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_15sdp"
+        android:layout_marginBottom="@dimen/_30sdp"
+        android:background="@color/transparent"
+        android:fontFamily="@font/sf_prodisplay_bold"
+        android:hint="xxxx xxxx xxxx xxxx"
+        android:inputType="text"
+        android:maxLines="1"
+        android:textColor="#0575E6"
+        android:textColorHint="#e5e5e5"
+        android:textSize="@dimen/_26sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvCardNo" />
+
+    <TextView
+        android:id="@+id/tvCVV"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/sf_prodisplay_regular"
+        android:text="@string/cvv"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:textColor="@color/colorAccent"
+        android:textSize="@dimen/_12sdp"
+        app:layout_constraintEnd_toStartOf="@+id/tvExpireDate"
+        app:layout_constraintStart_toStartOf="@+id/llVisa"
+        app:layout_constraintTop_toBottomOf="@+id/edtCardno" />
+
+    <EditText
+        android:id="@+id/edtCVV"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_30sdp"
+        android:background="@color/transparent"
+        android:fontFamily="@font/sf_prodisplay_bold"
+        android:hint="000"
+        android:inputType="text"
+        android:maxLines="1"
+        android:textColor="#0575E6"
+        android:textColorHint="#e5e5e5"
+        android:textSize="@dimen/_26sdp"
+        app:layout_constraintEnd_toEndOf="@+id/tvCVV"
+        app:layout_constraintStart_toStartOf="@+id/tvCVV"
+        app:layout_constraintTop_toBottomOf="@+id/tvCVV" />
+
+    <TextView
+        android:id="@+id/tvExpireDate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/sf_prodisplay_regular"
+        android:text="@string/expiration_date"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:textColor="@color/colorAccent"
+        android:textSize="@dimen/_12sdp"
+        app:layout_constraintEnd_toEndOf="@+id/llPayPal"
+        app:layout_constraintStart_toEndOf="@+id/tvCVV"
+        app:layout_constraintTop_toBottomOf="@+id/edtCardno" />
+
+    <EditText
+        android:id="@+id/edtExpireDate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_30sdp"
+        android:background="@color/transparent"
+        android:fontFamily="@font/sf_prodisplay_bold"
+        android:hint="DD/MM"
+        android:inputType="text"
+        android:maxLines="1"
+        android:textColor="#0575E6"
+        android:textColorHint="#e5e5e5"
+        android:textSize="@dimen/_26sdp"
+        app:layout_constraintEnd_toEndOf="@+id/tvExpireDate"
+        app:layout_constraintStart_toStartOf="@+id/tvExpireDate"
+        app:layout_constraintTop_toBottomOf="@+id/tvCVV" />
+
+
+    <TextView
+        android:id="@+id/tvNext"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_15sdp"
+        android:layout_marginBottom="@dimen/_15sdp"
+        android:background="@drawable/round_corner_bg"
+        android:fontFamily="@font/sf_prodisplay_regular"
+        android:gravity="center"
+        android:text="@string/pay_now"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/_13sdp"
+        android:layout_marginTop="@dimen/_40sdp"
+        android:onClick="onClick"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtExpireDate"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

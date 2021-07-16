@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    tools:context=".view.register.EnterEmailActivity">
+
+    <ImageView
+        android:id="@+id/iv_back"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:scaleType="center"
+        android:src="@drawable/login_back"
+        app:layout_constraintHeight_percent=".6"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:src="@drawable/group_2679"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:overScrollMode="never"
+        app:layout_constraintTop_toBottomOf="@id/ivBack"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:fillViewport="true"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/iv_logo"
+                android:layout_width="@dimen/_375sdp"
+                android:layout_height="@dimen/_44sdp"
+                android:src="@drawable/ic_splash_logo_new"
+                android:layout_marginTop="@dimen/_20sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/top_round_bg"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+
+
+
+            <TextView
+                android:id="@+id/tvEnterEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_25sdp"
+                android:fontFamily="@font/sfpro_displaymedium"
+                android:text="@string/enter_email"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/_18sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvEmailId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:fontFamily="@font/sf_prodisplay_regular"
+                android:text="@string/email_Id"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/_12sdp"
+                app:layout_constraintBottom_toTopOf="@+id/edtEmailId"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvEnterEmail" />
+
+            <EditText
+                android:id="@+id/edtEmailId"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginHorizontal="@dimen/_20sdp"
+                android:layout_marginBottom="@dimen/_30sdp"
+                android:background="@color/transparent"
+                android:fontFamily="@font/sf_prodisplay_bold"
+                android:hint="Admin@gmail.com"
+                android:inputType="text"
+                android:maxLines="1"
+                android:maxLength="35"
+                android:textColor="#0575E6"
+                android:textColorHint="#e5e5e5"
+                android:textSize="@dimen/_16sdp"
+                app:layout_constraintBottom_toTopOf="@+id/tv_Next"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_Next"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_30sdp"
+                android:background="@drawable/round_corner_bg_disabled"
+                android:fontFamily="@font/sf_prodisplay_regular"
+                android:gravity="center"
+                android:text="@string/next"
+                android:enabled="false"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_14sdp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@id/tvEmailId"
+                app:layout_constraintStart_toStartOf="@id/tvEmailId" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

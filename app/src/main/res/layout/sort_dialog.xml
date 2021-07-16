@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/white"
+    >
+
+    <TextView
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/sort"
+        android:text="@string/sortby"
+        android:fontFamily="@font/poppins_bold"
+        android:textColor="@color/colorBlack"
+        android:textSize="20sp"
+        />
+    <View
+        android:id="@+id/viewSort"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#29000000"
+        app:layout_constraintTop_toBottomOf="@id/sort"
+        android:layout_marginTop="@dimen/_10sdp"
+        />
+
+    <RadioGroup
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:paddingBottom="@dimen/_10sdp"
+        android:id="@+id/rdioGrpHome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_15sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewSort"
+        >
+
+        <RadioButton
+            android:visibility="visible"
+            android:textAlignment="textStart"
+            android:id="@+id/rdioNameAsc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:text="Name - Ascending"
+            android:layoutDirection="rtl"
+            android:textColor="@color/colorBlack" />
+
+        <RadioButton
+            android:textAlignment="textStart"
+            android:id="@+id/rdioNameDesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:text="Name - Descending"
+            android:layoutDirection="rtl"
+            android:textColor="@color/colorBlack" />
+
+        <RadioButton
+            android:textAlignment="textStart"
+            android:id="@+id/rdioRatingLow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:text="Rating - Low to High"
+            android:layoutDirection="rtl"
+            android:textColor="@color/colorBlack" />
+        <RadioButton
+            android:textAlignment="textStart"
+            android:id="@+id/rdioRatingHigh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Rating - High to Low"
+            android:layoutDirection="rtl"
+            android:textColor="@color/colorBlack" />
+
+        <RadioButton
+            android:textAlignment="textStart"
+            android:id="@+id/rdioPrizeLow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:text="Price - Low to High"
+            android:layoutDirection="rtl"
+            android:textColor="@color/colorBlack" />
+        <RadioButton
+            android:textAlignment="textStart"
+            android:id="@+id/rdioPrizeHigh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Price - High to Low"
+            android:layoutDirection="rtl"
+            android:textColor="@color/colorBlack" />
+        <RadioButton
+            android:textAlignment="textStart"
+            android:id="@+id/rdioDistanceLow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:text="Distance - Low to High"
+            android:layoutDirection="rtl"
+            android:textColor="@color/colorBlack" />
+        <RadioButton
+            android:textAlignment="textStart"
+            android:id="@+id/rdioDistanceHigh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Distance - High to Low"
+            android:layoutDirection="rtl"
+            android:textColor="@color/colorBlack" />
+    </RadioGroup>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

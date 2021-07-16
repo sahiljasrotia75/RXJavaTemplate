@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/_10sdp"
+    android:layout_marginHorizontal="@dimen/_10sdp"
+    android:paddingTop="@dimen/_10sdp"
+    android:background="@drawable/booking_detail_item_back">
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorWhite"
+        android:textSize="16sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:paddingLeft="@dimen/_10sdp"
+        app:layout_constraintWidth_percent=".75"
+        android:id="@+id/tv_service_type"
+        android:fontFamily="@font/sf_pro_semibold"
+        android:text="fsdfsdfsd"/>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorWhite"
+        android:textSize="10sp"
+        app:layout_constraintTop_toBottomOf="@+id/tv_service_type"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:paddingLeft="@dimen/_10sdp"
+        android:id="@+id/tv_desc"
+        app:layout_constraintWidth_percent=".75"
+
+        android:fontFamily="@font/sf_prodisplay_regular"
+        android:text="@string/i_have_a_great_deal_of_experience_using_power_tools_and_have_remodeled_two_homes_i_own_most_necessary_tools_for_this_type_of_work"/>
+
+
+    <TextView
+        android:paddingBottom="@dimen/_10sdp"
+        android:visibility="visible"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorWhite"
+        android:textSize="14sp"
+        app:layout_constraintTop_toBottomOf="@+id/tv_desc"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:paddingLeft="@dimen/_10sdp"
+        app:layout_constraintWidth_percent=".75"
+        android:id="@+id/tv_time_slot"
+        android:fontFamily="@font/sf_pro_semibold"
+        android:text="kjfjf"/>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorWhite"
+        android:textSize="16sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:paddingRight="@dimen/_10sdp"
+        android:gravity="end"
+        app:layout_constraintVertical_chainStyle="packed"
+        app:layout_constraintBottom_toTopOf="@+id/tv_select"
+        android:id="@+id/tv_charges"
+        app:layout_constraintWidth_percent=".25"
+        android:fontFamily="@font/sf_prodisplay_regular"
+        android:text=""/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorWhite"
+        android:textSize="10sp"
+        app:layout_constraintVertical_chainStyle="packed"
+        android:background="@drawable/select_round_corner_bg_green"
+        app:layout_constraintTop_toBottomOf="@id/tv_charges"
+        app:layout_constraintRight_toRightOf="parent"
+        android:gravity="center"
+        android:id="@+id/tv_select"
+        android:paddingStart="@dimen/_15sdp"
+        android:paddingEnd="@dimen/_15sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        app:layout_constraintStart_toStartOf="@id/tv_charges"
+        app:layout_constraintEnd_toEndOf="@id/tv_charges"
+        app:layout_constraintWidth_percent=".25"
+        android:fontFamily="@font/sf_prodisplay_regular"
+        android:text="@string/selected"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

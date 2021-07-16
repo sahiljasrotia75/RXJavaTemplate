@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.activities.HomeActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/framelayout"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/bottom_view"/>
+
+    <include
+        layout="@layout/navigation_footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bottom_view"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clBlackOut4phone"
+        android:background="#80000000"
+        android:clickable="true"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/phonePopup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/top_round_bg"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+
+
+        <TextView
+            android:id="@+id/tvEnterPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_25sdp"
+            android:fontFamily="@font/sfpro_displaymedium"
+            android:text="@string/phone_number_is_mandatory_to_book_a_service"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/_18sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvPhoneNo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:fontFamily="@font/sf_prodisplay_regular"
+            android:text="@string/phone_no"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/_12sdp"
+            app:layout_constraintBottom_toTopOf="@+id/edtPhoneNo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvEnterPhone" />
+
+        <com.hbb20.CountryCodePicker
+            android:id="@+id/ccp02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_13sdp"
+            app:ccp_showFlag="false"
+            app:ccp_showNameCode="false"
+            android:padding="0dp"
+            app:ccp_textSize="@dimen/_16sdp"
+            app:ccp_showArrow="false"
+            app:ccp_defaultPhoneCode="356"
+            app:ccp_arrowColor="@color/colorAccent"
+            app:ccp_contentColor="@color/colorAccent"
+            app:layout_constraintTop_toTopOf="@id/edtPhoneNo"
+            app:layout_constraintBottom_toBottomOf="@id/edtPhoneNo"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <EditText
+            android:id="@+id/edtPhoneNo"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:layout_marginBottom="@dimen/_30sdp"
+            android:background="@color/transparent"
+            android:fontFamily="@font/sf_prodisplay_bold"
+            android:hint="Enter Phone Number"
+            android:inputType="number"
+            android:maxLength="12"
+            android:maxLines="1"
+            android:textColor="#0575E6"
+            android:textColorHint="#e5e5e5"
+            android:textSize="@dimen/_16sdp"
+            app:layout_constraintBottom_toTopOf="@+id/tv_NextPhone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/ccp02" />
+
+        <TextView
+            android:id="@+id/tv_NextPhone"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_30sdp"
+            android:background="@drawable/round_corner_bg_disabled"
+            android:fontFamily="@font/sf_prodisplay_regular"
+            android:gravity="center"
+            android:text="@string/next"
+            android:enabled="false"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/_14sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@id/tvEnterPhone"
+            app:layout_constraintStart_toStartOf="@id/tvEnterPhone" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clBlackOut4email"
+        android:background="#80000000"
+        android:clickable="true"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="true">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/emailPopup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/top_round_bg"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <TextView
+                android:id="@+id/tvEnterEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_25sdp"
+                android:fontFamily="@font/sfpro_displaymedium"
+                android:text="@string/emailMandatory"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/_18sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvEmailId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:fontFamily="@font/sf_prodisplay_regular"
+                android:text="@string/email_Id"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/_12sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvEnterEmail" />
+
+            <EditText
+                android:id="@+id/etEmail"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginHorizontal="@dimen/_20sdp"
+                android:layout_marginBottom="@dimen/_30sdp"
+                android:background="@color/transparent"
+                android:fontFamily="@font/sf_prodisplay_bold"
+                android:hint="Admin@gmail.com"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:maxLength="35"
+                android:textColor="#0575E6"
+                android:textColorHint="#e5e5e5"
+                android:textSize="@dimen/_16sdp"
+              app:layout_constraintTop_toBottomOf="@+id/tvEmailId"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:ignore="HardcodedText"
+                android:importantForAutofill="no" />
+
+
+            <TextView
+                android:id="@+id/tv_NextEmail"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_30sdp"
+                android:background="@drawable/round_corner_bg_disabled"
+                android:fontFamily="@font/sf_prodisplay_regular"
+                android:gravity="center"
+                android:text="@string/next"
+                android:enabled="false"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_14sdp"
+                android:layout_marginHorizontal="@dimen/_20sdp"
+                app:layout_constraintTop_toBottomOf="@+id/etEmail"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

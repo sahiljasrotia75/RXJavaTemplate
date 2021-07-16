@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@android:color/white"
+    android:layout_height="match_parent"
+    tools:context=".view.activities.RequireServiceActivity">
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        android:background="@color/colorAccent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:onClick="onClick"
+        android:src="@drawable/group_2679"
+        app:layout_constraintBottom_toBottomOf="@id/view"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:clipToPadding="false"
+        android:fillViewport="true"
+        android:overScrollMode="never"
+        android:paddingBottom="@dimen/_20sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/view">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+<!--            <TextView-->
+<!--                android:id="@+id/tv_when"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginStart="@dimen/_15sdp"-->
+<!--                android:layout_marginTop="@dimen/_20sdp"-->
+<!--                android:layout_marginEnd="@dimen/_15sdp"-->
+<!--                android:fontFamily="@font/sfpro_displaymedium"-->
+<!--                android:text="@string/when_require"-->
+<!--                android:textColor="@color/colorAccent"-->
+<!--                android:textSize="22sp"-->
+<!--                app:layout_constraintTop_toTopOf="parent" />-->
+
+            <TextView
+                android:id="@+id/tv_select_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginEnd="@dimen/_15sdp"
+                android:fontFamily="@font/sfpro_displaymedium"
+                android:text="@string/service_date_time"
+                android:textColor="@color/_525b6b"
+                android:textSize="16sp"
+                android:visibility="gone"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/date_recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:clipToPadding="false"
+                android:overScrollMode="never"
+                android:paddingStart="@dimen/_15sdp"
+                android:paddingEnd="@dimen/_5sdp"
+                android:visibility="gone"
+                app:layout_constraintTop_toBottomOf="@id/tv_select_date" />
+
+            <View
+                android:visibility="gone"
+                android:layout_marginTop="@dimen/_10sdp"
+                app:layout_constraintTop_toBottomOf="@id/tv_select_date"
+                android:id="@+id/line1"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/_b2b9c6"
+                />
+
+
+            <TextView
+                android:id="@+id/tvSelectedDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_15sdp"
+                android:fontFamily="@font/sf_prodisplay_bold"
+                android:textColorHint="@color/_e5e5e5"
+                android:textSize="18sp"
+                android:visibility="gone"
+                android:textColor="@color/colorAccent"
+                app:layout_constraintTop_toBottomOf="@id/line1" />
+
+            <com.github.sundeepk.compactcalendarview.CompactCalendarView
+                android:layout_marginTop="@dimen/_10sdp"
+                app:layout_constraintTop_toBottomOf="@+id/tvSelectedDate"
+                android:id="@+id/compactcalendar_view"
+                android:layout_width="match_parent"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp"
+                android:visibility="gone"
+                android:layout_height="260dp"
+                app:compactCalendarTargetHeight="250dp"
+                app:compactCalendarTextSize="12sp"
+                app:compactCalendarBackgroundColor="#ffffff"
+                app:compactCalendarTextColor="#000000"
+                app:compactCalendarCurrentSelectedDayTextColor="#ffffff"
+                app:compactCalendarCurrentDayTextColor="@color/colorBlack"
+                app:compactCalendarCurrentSelectedDayBackgroundColor="@color/colorAccent"
+                app:compactCalendarCurrentDayBackgroundColor="@color/colorLightGrey"
+                app:compactCalendarMultiEventIndicatorColor="#fff"
+                />
+
+            <View
+                app:layout_constraintTop_toBottomOf="@id/compactcalendar_view"
+                android:id="@+id/line2"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/_b2b9c6"
+                />
+
+            <TextView
+                android:id="@+id/tv_select_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginEnd="@dimen/_15sdp"
+                android:fontFamily="@font/sfpro_displaymedium"
+                android:text="@string/select_time"
+                android:textColor="@color/_525b6b"
+                android:textSize="16sp"
+                android:visibility="gone"
+                app:layout_constraintTop_toBottomOf="@id/line2" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/time_recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:clipToPadding="false"
+                android:overScrollMode="never"
+                android:paddingStart="@dimen/_15sdp"
+                android:paddingEnd="@dimen/_5sdp"
+                android:visibility="gone"
+                app:layout_constraintTop_toBottomOf="@id/tv_select_time" />
+
+
+            <TextView
+                android:id="@+id/tv_location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginEnd="@dimen/_15sdp"
+                android:fontFamily="@font/sf_prodisplay_regular"
+                android:text="@string/location"
+                android:textColor="@color/colorAccent"
+                android:textSize="16sp"
+                app:layout_constraintTop_toBottomOf="@id/time_recycler_view" />
+
+            <TextView
+                android:id="@+id/tv_location_value"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_15sdp"
+                android:drawableRight="@drawable/ic_search_loc"
+                android:fontFamily="@font/sf_prodisplay_bold"
+                android:hint="@string/search_location"
+                android:textColorHint="@color/_e5e5e5"
+                android:textSize="30sp"
+                android:onClick="onClick"
+                android:textColor="@color/colorAccent"
+                app:layout_constraintTop_toBottomOf="@id/tv_location" />
+
+            <TextView
+                android:id="@+id/tv_task_desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginEnd="@dimen/_15sdp"
+                android:fontFamily="@font/sf_prodisplay_regular"
+                android:text="@string/task_desc"
+                android:textColor="@color/colorAccent"
+                android:textSize="16sp"
+                app:layout_constraintTop_toBottomOf="@id/tv_location_value" />
+
+            <EditText
+                android:id="@+id/tv_desc_value"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_15sdp"
+                android:background="@color/transparent"
+                android:fontFamily="@font/sf_prodisplay_bold"
+                android:hint="@string/enter_task_description"
+                android:inputType="text"
+                android:textColor="@color/colorAccent"
+                android:textColorHint="#e5e5e5"
+                android:textSize="30sp"
+                app:layout_constraintTop_toBottomOf="@id/tv_task_desc" />
+
+
+            <!--        <TextView-->
+            <!--        android:layout_width="match_parent"-->
+            <!--        android:layout_height="wrap_content"-->
+            <!--        android:textSize="30sp"-->
+            <!--        android:fontFamily="@font/sf_prodisplay_bold"-->
+            <!--        android:text="@string/enter_task_description"-->
+            <!--        android:textColor="@color/_e5e5e5"-->
+            <!--        app:layout_constraintTop_toBottomOf="@id/tv_task_desc"-->
+            <!--        android:layout_marginStart="@dimen/_15sdp"-->
+            <!--        android:layout_marginEnd="@dimen/_15sdp"-->
+            <!--        android:layout_marginTop="@dimen/_10sdp"-->
+            <!--        android:id="@+id/tv_desc_value"/>-->
+
+            <TextView
+                android:id="@+id/tv_yourLoc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginBottom="@dimen/_15sdp"
+                android:background="@drawable/round_corner_bg"
+                android:fontFamily="@font/sf_prodisplay_regular"
+                android:gravity="center"
+                android:onClick="onClick"
+                android:text="@string/next"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_14sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_desc_value" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

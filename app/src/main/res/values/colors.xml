@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#00F260</color>
+    <color name="colorPrimaryDark">#0575E6</color>
+    <color name="colorAccent">#0575E6</color>
+    <color name="colorDisable">#e5e5e5</color>
+    <color name="colorGreen">#00c408</color>
+
+    <color name="transparent">#00000000</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorLightGrey">#d9d9d9</color>
+    <color name="_130e50">#0575E6</color>
+    <color name="_0b0741">#0575E6</color>
+    <color name="_e8e8e8">#e8e8e8</color>
+    <color name="_ff8a74">#ff8a74</color>
+    <color name="_f0f0f0">#f0f0f0</color>
+    <color name="_1f84ec">#0575E6</color>
+    <color name="_656290">#656290</color>
+    <color name="_b2b9c6">#b2b9c6</color>
+    <color name="_fcb84e">#fcb84e</color>
+    <color name="_00c408">#00c408</color>
+    <color name="_ec1818">#ec1818</color>
+    <color name="_e5e5e5">#e5e5e5</color>
+    <color name="_3b5999">#3b5999</color>
+    <color name="_649ff8">#649ff8</color>
+    <color name="_0c093b">#0575E6</color>
+    <color name="_120e4d">#0575E6</color>
+    <color name="_0d0925">#0575E6</color>
+    <color name="_acb1c0">#acb1c0</color>
+    <color name="_e4e9f2">#e4e9f2</color>
+    <color name="_d4d8df">#d4d8df</color>
+    <color name="_858585">#858585</color>
+    <color name="_b9b9b9">#b9b9b9</color>
+    <color name="_140f52">#0575E6</color>
+    <color name="_7a828e">#7a828e</color>
+    <color name="_525b6b">#525b6b</color>
+    <color name="_f2f2f2">#f2f2f2</color>
+    <color name="_171717">#000000</color>
+
+</resources>

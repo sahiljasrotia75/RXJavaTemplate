@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    tools:context=".view.register.VerifyOTPActivity">
+
+    <ImageView
+        android:id="@+id/iv_back"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHeight_percent=".6"
+        android:scaleType="center"
+        android:src="@drawable/login_back" />
+
+    <ImageView
+        android:id="@+id/ivBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:src="@drawable/group_2679"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:overScrollMode="never"
+        app:layout_constraintTop_toBottomOf="@id/ivBack"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:fillViewport="true"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/iv_logo"
+                android:layout_width="@dimen/_375sdp"
+                android:layout_height="@dimen/_44sdp"
+                android:src="@drawable/ic_splash_logo_new"
+                android:layout_marginTop="@dimen/_20sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/top_round_bg"
+                app:layout_constraintBottom_toBottomOf="parent">
+
+
+
+                <TextView
+                    android:id="@+id/tv_EnterCode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/_20sdp"
+                    android:layout_marginTop="@dimen/_25sdp"
+                    android:fontFamily="@font/sfpro_light"
+                    android:text="@string/enter_code"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="22sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tv_verificationOTP"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/_20sdp"
+                    android:layout_marginTop="@dimen/_30sdp"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:fontFamily="@font/sf_prodisplay_regular"
+                    android:text="@string/verification_otp"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/_14sdp"
+                    app:layout_constraintBottom_toTopOf="@+id/codeLayout"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_EnterCode" />
+
+                <LinearLayout
+                    android:id="@+id/codeLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_50sdp"
+                    android:weightSum="6"
+                    app:layout_constraintBottom_toTopOf="@+id/tv_verify"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginBottom="@dimen/_20sdp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:gravity="center"
+                    >
+
+                    <com.mukesh.mukeshotpview.mukeshOtpView.MukeshOtpView
+                        android:id="@+id/mukeshOtpView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="5dp"
+                        android:inputType="number"
+                        android:hint="******"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/_26sdp"
+                        app:hideLineWhenFilled="false"
+                        app:itemCount="6"
+                        app:lineColor="@android:color/holo_red_light"
+                        app:state_filled="true"
+                        app:viewType="none"
+                        />
+
+
+                    <!-- <androidx.constraintlayout.widget.ConstraintLayout
+                         android:layout_width="match_parent"
+                         android:layout_height="match_parent"
+                         android:layout_marginEnd="@dimen/_4sdp"
+                         android:layout_weight="1">
+
+                         <EditText
+                             android:id="@+id/digit01"
+                             android:layout_width="0dp"
+                             android:layout_height="match_parent"
+                             android:background="@color/transparent"
+                             android:cursorVisible="false"
+                             android:fontFamily="@font/sf_prodisplay_bold"
+                             android:gravity="center"
+                             android:inputType="number"
+                             android:maxLength="1"
+                             android:hint="*"
+                             android:textColorHint="#e5e5e5"
+                             android:textColor="#000000"
+                             android:textSize="@dimen/_28sdp"
+                             app:layout_constraintLeft_toLeftOf="parent"
+                             app:layout_constraintRight_toRightOf="parent"
+                             app:layout_constraintTop_toTopOf="parent" />
+
+                     </androidx.constraintlayout.widget.ConstraintLayout>
+
+                     <androidx.constraintlayout.widget.ConstraintLayout
+                         android:layout_width="match_parent"
+                         android:layout_height="match_parent"
+                         android:layout_marginEnd="@dimen/_4sdp"
+                         android:layout_weight="1">
+
+                         <EditText
+                             android:id="@+id/digit02"
+                             android:layout_width="0dp"
+                             android:layout_height="match_parent"
+                             android:background="@color/transparent"
+                             android:cursorVisible="true"
+                             android:fontFamily="@font/sf_prodisplay_bold"
+                             android:gravity="center"
+                             android:inputType="number"
+                             android:maxLength="1"
+                             android:hint="*"
+                             android:textColorHint="#e5e5e5"
+                             android:textColor="#000000"
+                             android:textSize="@dimen/_28sdp"
+                             app:layout_constraintLeft_toLeftOf="parent"
+                             app:layout_constraintRight_toRightOf="parent"
+                             app:layout_constraintTop_toTopOf="parent"
+
+                             />
+
+
+                     </androidx.constraintlayout.widget.ConstraintLayout>
+
+                     <androidx.constraintlayout.widget.ConstraintLayout
+                         android:layout_width="match_parent"
+                         android:layout_height="match_parent"
+                         android:layout_marginEnd="@dimen/_4sdp"
+                         android:layout_weight="1">
+
+                         <EditText
+                             android:id="@+id/digit03"
+                             android:layout_width="0dp"
+                             android:layout_height="match_parent"
+                             android:background="@color/transparent"
+                             android:cursorVisible="true"
+                             android:fontFamily="@font/sf_prodisplay_bold"
+                             android:gravity="center"
+                             android:inputType="number"
+                             android:maxLength="1"
+                             android:hint="*"
+                             android:textColorHint="#e5e5e5"
+                             android:textSize="@dimen/_28sdp"
+                             app:layout_constraintLeft_toLeftOf="parent"
+                             app:layout_constraintRight_toRightOf="parent"
+                             app:layout_constraintTop_toTopOf="parent" />
+                     </androidx.constraintlayout.widget.ConstraintLayout>
+
+                     <androidx.constraintlayout.widget.ConstraintLayout
+                         android:layout_width="match_parent"
+                         android:layout_height="match_parent"
+                         android:layout_marginEnd="@dimen/_4sdp"
+                         android:layout_weight="1">
+
+                         <EditText
+                             android:id="@+id/digit04"
+                             android:layout_width="0dp"
+                             android:layout_height="match_parent"
+                             android:background="@color/transparent"
+                             android:cursorVisible="true"
+                             android:fontFamily="@font/sf_prodisplay_bold"
+                             android:gravity="center"
+                             android:inputType="number"
+                             android:maxLength="1"
+                             android:hint="*"
+                             android:textColorHint="#e5e5e5"
+                             android:textSize="@dimen/_28sdp"
+                             app:layout_constraintLeft_toLeftOf="parent"
+                             app:layout_constraintRight_toRightOf="parent"
+                             app:layout_constraintTop_toTopOf="parent" />
+
+                     </androidx.constraintlayout.widget.ConstraintLayout>
+
+                     <androidx.constraintlayout.widget.ConstraintLayout
+                         android:layout_width="match_parent"
+                         android:layout_height="match_parent"
+                         android:layout_marginEnd="@dimen/_4sdp"
+                         android:layout_weight="1">
+
+                         <EditText
+                             android:id="@+id/digit05"
+                             android:layout_width="0dp"
+                             android:layout_height="match_parent"
+                             android:background="@color/transparent"
+                             android:cursorVisible="true"
+                             android:fontFamily="@font/sf_prodisplay_bold"
+                             android:gravity="center"
+                             android:inputType="number"
+                             android:maxLength="1"
+                             android:hint="*"
+                             android:textColorHint="#e5e5e5"
+                             android:textSize="@dimen/_28sdp"
+                             app:layout_constraintLeft_toLeftOf="parent"
+                             app:layout_constraintRight_toRightOf="parent"
+                             app:layout_constraintTop_toTopOf="parent" />
+
+                     </androidx.constraintlayout.widget.ConstraintLayout>
+
+                     <androidx.constraintlayout.widget.ConstraintLayout
+                         android:layout_width="match_parent"
+                         android:layout_height="match_parent"
+                         android:layout_marginEnd="@dimen/_4sdp"
+                         android:layout_weight="1">
+
+                         <EditText
+                             android:id="@+id/digit06"
+                             android:layout_width="0dp"
+                             android:layout_height="match_parent"
+                             android:background="@color/transparent"
+                             android:cursorVisible="true"
+                             android:fontFamily="@font/sf_prodisplay_bold"
+                             android:gravity="center"
+                             android:inputType="number"
+                             android:maxLength="1"
+                             android:hint="*"
+                             android:textColorHint="#e5e5e5"
+                             android:textSize="@dimen/_28sdp"
+                             app:layout_constraintLeft_toLeftOf="parent"
+                             app:layout_constraintRight_toRightOf="parent"
+                             app:layout_constraintTop_toTopOf="parent" />
+
+                     </androidx.constraintlayout.widget.ConstraintLayout>
+ -->
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_verify"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_15sdp"
+                    android:background="@drawable/round_corner_bg_disabled"
+                    android:fontFamily="@font/sf_prodisplay_regular"
+                    android:gravity="center"
+                    android:text="@string/verify"
+                    android:enabled="false"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/_14sdp"
+                    app:layout_constraintBottom_toTopOf="@+id/tv_notRecieved"
+                    app:layout_constraintEnd_toEndOf="@id/tv_verificationOTP"
+                    app:layout_constraintStart_toStartOf="@id/tv_verificationOTP" />
+
+                <TextView
+                    android:id="@+id/tv_notRecieved"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/_20sdp"
+                    android:fontFamily="@font/sf_prodisplay_regular"
+                    android:text="@string/codenot_recieved"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/_11sdp"
+                    android:gravity="center"
+                    app:layout_constraintBottom_toTopOf="@+id/tv_resend"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <TextView
+                    android:id="@+id/tv_resend"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/_20sdp"
+                    android:paddingBottom="@dimen/_15sdp"
+                    android:paddingTop="@dimen/_5sdp"
+                    android:fontFamily="@font/sf_prodisplay_bold"
+                    android:text="@string/resend"
+                    android:enabled="false"
+                    android:onClick="onClick"
+                    android:textColor="@color/_e5e5e5"
+                    android:textSize="@dimen/_12sdp"
+                    android:gravity="center"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

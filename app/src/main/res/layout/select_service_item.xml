@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/_10sdp"
+    android:paddingBottom="@dimen/_10sdp"
+    android:paddingTop="@dimen/_10sdp"
+    android:background="@drawable/home_grid_corners">
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorBlack"
+        android:textSize="16sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:paddingLeft="@dimen/_10sdp"
+        app:layout_constraintWidth_percent=".70"
+        android:id="@+id/tv_service_type"
+        android:fontFamily="@font/sf_pro_semibold"
+        android:text=""/>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/_b9b9b9"
+        android:textSize="10sp"
+        app:layout_constraintTop_toBottomOf="@+id/tv_service_type"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:paddingLeft="@dimen/_10sdp"
+        android:id="@+id/tv_desc"
+        app:layout_constraintWidth_percent=".75"
+        android:paddingBottom="@dimen/_10sdp"
+        android:fontFamily="@font/sf_prodisplay_regular"
+        android:text=""/>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/_b9b9b9"
+        android:textSize="16sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/tv_select"
+        app:layout_constraintRight_toRightOf="parent"
+        android:paddingRight="@dimen/_10sdp"
+        android:gravity="end"
+        app:layout_constraintVertical_chainStyle="packed"
+        android:id="@+id/tv_charges"
+        app:layout_constraintWidth_percent=".30"
+        android:fontFamily="@font/sf_prodisplay_regular"
+        android:text=""/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorWhite"
+        android:textSize="10sp"
+        app:layout_constraintVertical_chainStyle="packed"
+        android:background="@drawable/select_corner_bg"
+        app:layout_constraintTop_toBottomOf="@id/tv_charges"
+        app:layout_constraintRight_toRightOf="parent"
+        android:gravity="center"
+        android:paddingStart="@dimen/_15sdp"
+        android:paddingEnd="@dimen/_15sdp"
+        android:id="@+id/tv_select"
+        android:layout_marginTop="@dimen/_5sdp"
+        app:layout_constraintStart_toStartOf="@id/tv_charges"
+        app:layout_constraintEnd_toEndOf="@id/tv_charges"
+        app:layout_constraintWidth_percent=".25"
+        android:fontFamily="@font/sf_prodisplay_regular"
+        android:text="@string/select"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

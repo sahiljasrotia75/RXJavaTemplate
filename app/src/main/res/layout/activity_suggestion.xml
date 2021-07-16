@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    tools:context=".view.activities.ContactUsActivity">
+
+    <ImageView
+        android:id="@+id/back_click"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:src="@drawable/group_2679"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:fontFamily="@font/poppins_bold"
+
+        android:text="@string/suggestions"
+        android:textAlignment="center"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/_18sdp"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:background="@drawable/top_round_bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitle">
+
+
+
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:layout_marginTop="@dimen/_35sdp"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:layout_marginLeft="@dimen/_20sdp"
+           app:layout_constraintTop_toTopOf="parent"
+            android:id="@+id/ed_issue_name"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/_14sdp"
+            android:textAlignment="viewStart"
+            android:background="@null"
+            android:hint="@string/enter_your_suggestion"
+            android:textColor="@color/colorBlack"
+            android:fontFamily="@font/poppins_regular"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <View
+            android:id="@+id/v1"
+            android:background="@color/colorBlack"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            app:layout_constraintTop_toBottomOf="@id/ed_issue_name"
+            android:layout_height="@dimen/_1sdp"
+            android:layout_width="match_parent"/>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:gravity="top"
+            android:layout_margin="@dimen/_20sdp"
+            app:layout_constraintTop_toBottomOf="@id/v1"
+            android:id="@+id/ed_issue_des"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/_14sdp"
+            android:textAlignment="viewStart"
+            android:background="@null"
+            android:hint="@string/describe_sugestion"
+            android:textColor="@color/colorBlack"
+            android:fontFamily="@font/poppins_regular"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"/>
+        <View
+            android:background="@color/colorBlack"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginLeft="@dimen/_20sdp"
+            app:layout_constraintTop_toBottomOf="@id/ed_issue_des"
+            android:layout_height="@dimen/_1sdp"
+            android:layout_width="match_parent"/>
+
+
+
+        <TextView
+            android:id="@+id/tvSubmit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_30sdp"
+            android:layout_marginBottom="@dimen/_35sdp"
+            android:background="@drawable/round_corner_bg"
+            android:fontFamily="@font/sf_prodisplay_regular"
+            android:gravity="center"
+            android:text="@string/submit"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/_13sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

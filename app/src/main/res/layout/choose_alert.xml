@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="@dimen/_250sdp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/drawable_white_rounded_corner"
+    android:orientation="vertical"
+    android:padding="@dimen/_15sdp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Verification Type"
+        android:textSize="25sp"
+        android:id="@+id/tv_lang"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:textColor="@color/colorWhite"
+        android:fontFamily="@font/poppins_bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <TextView
+        android:id="@+id/tv_email"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:drawableRight="@drawable/filled_radio"
+        android:text="@string/email_ID"
+        android:textColor="@color/colorWhite"
+        android:textSize="16sp"
+        android:gravity="center_vertical"
+        android:fontFamily="@font/poppins_regular"
+        android:paddingTop="@dimen/_10sdp"
+        android:paddingBottom="@dimen/_10sdp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_lang" />
+
+    <TextView
+        android:id="@+id/tv_ph9"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:drawableRight="@drawable/ic_radio_unfilled"
+        android:text="@string/phone_no"
+        android:textColor="@color/_3b5999"
+        android:textSize="16sp"
+        android:gravity="center_vertical"
+        android:paddingTop="@dimen/_10sdp"
+        android:paddingBottom="@dimen/_10sdp"
+        android:fontFamily="@font/poppins_regular"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_email" />
+
+    <Button
+        android:id="@+id/btn_next"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:background="@drawable/round_corner_bg"
+        android:gravity="center"
+        android:onClick="onClick"
+        android:padding="@dimen/_10sdp"
+        android:stateListAnimator="@null"
+        android:text="@string/next"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        app:layout_constraintTop_toBottomOf="@+id/tv_ph9"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textColor="@color/colorWhite"
+        android:textSize="16sp"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
